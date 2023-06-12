@@ -1,0 +1,130 @@
+<!--
+Employee salary tax
+-->
+
+<title>
+Employee salary tax
+</title>
+<table border ="1">
+<tr>
+<td>
+ID
+<td>
+<input
+type="number"
+id="numid"
+placeholder="0"
+/>
+
+<tr>
+<td>
+Name
+<td>
+<input
+type="text"
+id="tbxename"
+placeholder="Unknown"
+/>
+
+<tr>
+<td>
+salary
+<td>
+<input
+type="text"
+id="tbxsal"
+placeholder="0.0"
+oninput="tbxsal_oninput ();"
+/>
+<tr>
+<td>
+House Rent Allowence
+<td>
+<input
+type="text"
+id="tbxhra"
+placeholder="0.0"
+readonly="readonly"
+/>
+
+<tr>
+<td>
+Dearness Allowance
+<td>
+<input
+type="text"
+id="tbxda"
+placeholder="0.0"
+readonly="readonly"
+/>
+
+<tr>
+<td>
+Provident fund
+<td>
+<input
+type="text"
+id="tbxpf"
+placeholder="0.0"
+readonly="readonly"
+/>
+<tr>
+<td>
+Gross pay
+<td>
+<input
+type="text"
+id="tbxgpay"
+placeholder="0.0"
+readonly="readonly"
+/>
+
+<tr>
+<td>
+Net pay
+<td>
+<input
+type="text"
+id="tbxnpay"
+placeholder="0.0"
+readonly="readonly"
+/>
+
+<tr align="center">
+<td colspan ="2">
+<input 
+type= "button"
+value="Cancel"
+onclick="location.href='Pro9_emp_allowance.html';"
+/>
+
+</table>
+
+<script>
+function tbxsal_oninput() {
+
+var sal=tbxsal.value;
+
+sal=parseFloat(sal);
+sal = isNaN(sal) ? 0 : sal;
+ var hra=sal*20.0 / 100;
+ var da=sal*15.0 / 100;
+ var pf=sal*35.0 / 100;
+
+var gpay=sal+hra+da;
+var npay=gpay - pf;
+
+tbxhra.value=hra;
+tbxda.value=da;
+tbxpf.value=pf;
+tbxgpay.value=gpay;
+tbxnpay.value=npay;
+}
+</script>
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+</--
+Example for multiplication Table
+-->
+
+<title> c </title>
+Enter multiplication Number
+<input
+type= "number"
+id="nummno"
+placeholder="0000"
+oninput="nummno_oninput ();" >
+
+<input 
+type="button"
+value="clear"
+onclick="location.href='Pro8_multi_table.html';"
+/>
+<div id= "dvop">
+wait...
+</div>
+
+<script>
+
+function nummno_oninput() {
+var mno = nummno.value;
+
+mno= parseInt(mno);
+mno= isNaN (mno) ? o : mno;
+
+var i=0;
+var res="" ; 
+
+for (i=1; i < 21; i++) {
+res +=i+ 'x' + mno + '=' + (i*mno); // 1x2=2
+res += '<br>' ;
+}
+dvop.innerHTML = res;
+}
+</script>
+

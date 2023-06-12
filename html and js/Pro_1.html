@@ -1,0 +1,30 @@
+
+<!--
+example for 'checkbox' GUI components
+"hr" stands for horizontal rules
+
+alert tag given to indicate the result
+
+-->
+<title>
+checkbox - GUI </title>
+Drinks Categories
+<hr color="blue" />
+ 
+<br>
+<input
+type ="checkbox"
+id="chkbxHot"
+value="Hot"
+oninput="chkbx_oninput();"
+/>Hot
+
+<script>
+function chkbx_oninput() {
+if (chkbxHot.checked) { //Both like and dislike alret message
+alert('Like Hot Drinks');
+}else {
+alert('dislike Hot Drinks');
+}
+}
+</script>

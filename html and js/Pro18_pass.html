@@ -1,0 +1,54 @@
+<table>
+<tr>
+<td>
+Password
+<td>
+<input
+type="password"
+id="pwduser"
+placeholder="codeword"
+/>
+
+<tr>
+<td>
+Confirmation Password
+<td>
+<input
+type="password"
+id="cwduser"
+placeholder="codeword"
+/>
+
+<tr>
+<td>
+<input
+type="button"
+value="cancel"
+onclick=location.href="Pro18_pass.html";
+/>
+<td>
+<input
+type="button"
+value="sign in"
+onclick="btnsignin_onclick();"
+/>
+</table>
+<script>
+function btnsignin_onclick() {
+var pwdusr=pwduser.value;
+pwdusr=pwdusr.trim();
+if (pwdusr.length==0){
+return;
+}
+var cwdusr=cwduser.value;
+cwdusr=cwdusr.trim();
+if(cwdusr.length==0){
+return;
+}
+if(pwduser.value==cwduser.value){
+location.href="Pro18_passblank.html";
+}else{
+alert('try again...');
+}
+}
+</script>

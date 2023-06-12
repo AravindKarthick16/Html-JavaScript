@@ -1,0 +1,287 @@
+<table border="0">
+
+<tr>
+<td>
+Consumer ID
+<td colspan="3">
+<input
+type='text'
+id='tbxcid'
+placeholder='0.0'
+style="text-align:right;width:100%;"
+/>
+
+<tr>
+<td>
+Previous reading 
+<td colspan="3">
+<input
+type='text'
+id='tbxcpr'
+placeholder='0.0'
+style="text-align:right;width:100%;"
+
+/>
+
+<tr>
+<td>
+Current reading 
+<td colspan="3">
+<input
+type='text'
+id='tbxcpr'
+placeholder='0.0'
+style="text-align:right;width:100%;"
+/>
+
+<tr>
+<td>
+Consumer category
+<td>
+<select>
+<option value='agriculture'>Agriculture
+<option value='domestic'>Domsetic
+<option value='commerical'selected>Commerical
+</select>
+
+<tr>
+<td>
+Net reading 
+<td colspan="3">
+<input
+type='text'
+id='tbxnr'
+placeholder='0.0'
+style="text-align:right;width:100%;"
+/>
+
+
+<tr>
+<td style="color:blue">
+Units
+<td style="color:blue">
+Consume unit
+<td style="color:blue">
+Unit amount
+<td style="color:blue">
+Total amount
+<tr>
+<td>
+0to100
+<td>
+<input
+type='text'
+id='tbxcuu100'
+placeholder='0.0'
+style="text-align:right;"
+/>
+<td>
+<input
+type='text'
+id='tbxpcuu100'
+placeholder='0.0'
+style="text-align:right;"
+readonly
+/>
+<td>
+<input
+type='text'
+id='tbxcuu100a'
+placeholder='0.0'
+style="text-align:right;"
+readonly
+/>
+<tr>
+<td>
+100to200
+<td>
+<input
+type='text'
+id='tbxcuu200'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+<td>
+<input
+type='text'
+id='tbxpcuu200'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+<td>
+<input
+type='text'
+id='tbxcuu200a'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+
+<tr>
+<td>
+200to400
+<td>
+<input
+type='text'
+id='tbxcuu400'
+placeholder='0.0'
+style="text-align:right;"
+
+/>
+<td>
+<input
+type='text'
+id='tbxpcuu400'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+<td>
+<input
+type='text'
+id='tbxpcuu400a'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+
+<tr>
+<td>
+400...
+<td>
+<input
+type='text'
+id='tbxcua400'
+placeholder='0.0'
+style="text-align:right;"
+
+/>
+<td>
+<input
+type='text'
+id='tbxpcua400'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+<td>
+<input
+type='text'
+id='tbxcua400a'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+
+<tr>
+<td>
+Meter charger
+<td colspan="3">
+<input
+type='text'
+id='tbxmc'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+
+<tr>
+<td>
+Tax for
+<td>
+<input
+type='text'
+id='tbxtaxa'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+
+<td>
+<input
+type='text'
+id='tbxtaxp'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+
+<td>
+<input
+type='text'
+id='tbxtaxtot'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+
+<tr>
+<td>
+Net pay
+<td colspan="3">
+<input
+id='tbxnpay'
+placeholder='0.0'
+readonly
+style="text-align:right;"
+
+/>
+
+<tr>
+<td colspan="2">
+<input
+type='button'
+value='cancel'
+oninput="location.href='Pro16_EB.html';"
+/>
+
+<td colspan="2">
+<input
+type='button'
+value='Find'
+oninput=btnFind_oninput();
+/>
+</table>
+
+<script>
+function btnFind_oninput(){
+var cid=0,cpr=0,ccr=0;
+var cnr=0;
+var ccu100=0,cuu200=0,cuu400=0,cua400=0;
+var pccu100=0,pcuu200=0,pcuu400=0,pcua400=0;
+var ccu100a=0,cuu200a=0,cuu400a=0,cua400a=0;
+
+
+cuu100=tbxcuu100.value;
+cuu200=tbxcuu200.value;
+cuu400=tbxcuu400.value;
+cua100=tbxcua400.value;
+
+pcuu100=tbxpcuu100.value;
+pcuu200=tbxpcuu200.value;
+pcuu400=tbxpcuu400.value;
+pcua100=tbxpcua400.value;
+
+
+}
+</script>
+
+
+
+
+
+
+

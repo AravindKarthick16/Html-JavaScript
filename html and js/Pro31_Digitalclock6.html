@@ -1,0 +1,25 @@
+<body bgcolor="white" text="black" style="font-size:200%" > 
+
+<h style="font-size:300%"> Current Time: </h>
+<h1 id="hldc"> Wait..... </h1>
+
+
+
+<script>
+
+setInterval (ugetTime, 1000);  //uget means user get
+function ugetTime( ) {
+const dt= new Date ();
+
+var h =(dt.getHours( ) > 9 ? dt.getHours( ) : ("0" + dt.getHours ( )));
+
+var m =(dt.getMinutes( ) > 9 ? dt.getMinutes( ) : ("0" + dt.getMinutes ( )));
+
+var s = (dt.getSeconds() > 9 ? dt.getSeconds ( ): ("0" + dt.getSeconds ( )));
+
+hldc.innerHTML = h + ":" + m + ":" +  s ;
+document.write= h + ":" + m + ":" +  s ;
+}
+
+</script>
+</body>

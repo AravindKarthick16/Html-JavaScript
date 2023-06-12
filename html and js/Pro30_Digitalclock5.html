@@ -1,0 +1,20 @@
+<body bgcolor="white" text="black" style="font-size:300%">
+
+<p> Output displays in title bar </p>
+
+<script>
+
+const tt = new Date ( );
+
+var h=(tt.getHours ( ) > 9) ? tt.getHours () : ("0" + tt.getHours ());
+
+
+var m=(tt.getMinutes ( ) > 9) ? tt.getMinutes () : ("0" + tt.getMinutes ());
+
+var s=(tt.getSeconds( ) > 9) ? tt.getSeconds () : ("0" + tt.getSeconds ());
+
+document.title=h + ":" + m + ":" + s 
+
+
+</script>
+</body>

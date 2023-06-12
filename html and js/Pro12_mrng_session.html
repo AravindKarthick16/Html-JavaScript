@@ -1,0 +1,56 @@
+Morning session
+<br>
+<input
+type='radio'
+id='rdomsp'
+name='rdom'
+value='morning session Present'
+oninput="rdo_oninput();"
+/>Present
+<br>
+<input
+type='radio'
+id='rdomsa'
+name='rdom'
+value='morning session Absent'
+oninput="rdo_oninput();"
+/>Absent
+
+<hr size='3' color='blue'>
+
+Afternoon session
+<br>
+<input
+type='radio'
+id='rdoasp'
+name='rdoa'
+value='afternoon session Present'
+oninput="rdo_oninput();"
+/>Present
+
+<br>
+<input
+type='radio'
+id='rdoasa'
+name='rdoa'
+value='afternoon session Absent'
+oninput="rdo_oninput();"
+/>Absent
+
+<br>
+<br>
+<div id="divop">
+wait...
+</div>
+
+<script>
+function rdo_oninput(){
+var res=' ';
+res = rdomsp.checked ? rdomsp.value : rdomsa.value;
+res += '<br>';
+res +=rdoasp.checked ? rdoasp.value : rdoasa.value;
+
+divop.innerHTML=res;
+}
+</script>
+
